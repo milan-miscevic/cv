@@ -4,9 +4,10 @@ includes:
 parameters:
     level: max
     paths:
-        - bin # adapt project only
-        - config # adapt project only
-        - public # adapt project only
+        - bin
+        - config
+        - data
+        - docs
         - src
         - tests
-        - view # adapt project only
+        - view
