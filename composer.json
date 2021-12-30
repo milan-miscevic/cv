@@ -1,0 +1,39 @@
+{
+    "name": "milan-miscevic/php-skeleton",
+    "type": "project",
+    "description": "Starting point for other PHP projects",
+    "keywords": [
+        "skeleton application",
+        "php project",
+        "skeleton"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Milan Miščević",
+            "email": "milan.miscevic@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.4 || ^8"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.3.2",
+        "phpstan/phpstan": "^1.2.0",
+        "phpunit/phpunit": "^9.5.10",
+        "vimeo/psalm": "^4.14.0"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Mmm\\PhpSkeleton\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Mmm\\PhpSkeleton\\Tests\\": "tests/"
+        }
+    }
+}
