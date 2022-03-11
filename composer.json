@@ -1,11 +1,13 @@
 {
     "name": "milan-miscevic/cv",
-    "type": "project",
     "description": "My CV",
-    "keywords": [
-        "cv"
-    ],
     "license": "MIT",
+    "type": "project",
+    "keywords": [
+        "cv",
+        "milan-miscevic",
+        "resume"
+    ],
     "authors": [
         {
             "name": "Milan Miščević",
@@ -16,16 +18,11 @@
         "php": "^8.1"
     },
     "require-dev": {
-        "friendsofphp/php-cs-fixer": "^3.4.0",
-        "phpstan/phpstan": "^1.3.0",
-        "phpunit/phpunit": "^9.5.11",
-        "vimeo/psalm": "^4.16.1"
-    },
-    "config": {
-        "sort-packages": true,
-        "allow-plugins": {
-            "composer/package-versions-deprecated": true
-        }
+        "friendsofphp/php-cs-fixer": "^3.7.0",
+        "infection/infection": "^0.26.6",
+        "phpstan/phpstan": "^1.4.9",
+        "phpunit/phpunit": "^9.5.18",
+        "vimeo/psalm": "^4.22.0"
     },
     "autoload": {
         "psr-4": {
@@ -36,5 +33,9 @@
         "psr-4": {
             "Mmm\\Cv\\Tests\\": "tests/"
         }
+    },
+    "config": {
+        "allow-plugins": {},
+        "sort-packages": true
     }
 }
