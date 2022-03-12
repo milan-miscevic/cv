@@ -8,6 +8,7 @@ class About
 {
     public function __construct(
         public string $name,
+        public string $occupation,
         public string $summary,
         /** @var string[] */
         public array $specialties,

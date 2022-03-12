@@ -8,10 +8,15 @@ class Profile
 {
     public function __construct(
         public About $about,
-        /** @var Experience[] */
-        public array $experiences,
+        /** @var Position[] */
+        public array $positions,
         /** @var Education[] */
         public array $educations,
+        public Contact $contact,
+        /** @var Link[] */
+        public array $links,
+        /** @var Language[] */
+        public array $languages,
     ) {
     }
 }
