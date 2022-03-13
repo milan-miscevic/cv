@@ -14,7 +14,7 @@ class Position
         public DateTimeInterface $startDate,
         public ?DateTimeInterface $endDate,
         public string $description,
-        /** @var Technology[] */
+        /** @var Technological[] */
         public array $technologies,
         /** @var Project[] */
         public array $projects,

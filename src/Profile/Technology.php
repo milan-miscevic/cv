@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Mmm\Cv\Profile;
 
-enum Technology: string
+enum Technology: string implements Technological
 {
     case Apache = 'Apache';
     case C = 'C';
@@ -50,4 +50,9 @@ enum Technology: string
     case Zend = 'Zend';
     case jQuery = 'jQuery';
     case vanilla = 'vanilla';
+
+    public function getValue(): string
+    {
+        return $this->value;
+    }
 }
