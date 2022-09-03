@@ -16,7 +16,7 @@ class TechnologyGroup implements Technological
     public function getValue(): string
     {
         $subtechnologies = array_map(
-            function (Technology $value) {
+            function (Technology $value): string {
                 return $value->getValue();
             },
             $this->subtechnologies,
