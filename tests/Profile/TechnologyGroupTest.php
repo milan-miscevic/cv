@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Mmm\Cv\Tests;
+namespace Mmm\Cv\Tests\Profile;
 
 use Mmm\Cv\Profile\Technology;
 use Mmm\Cv\Profile\TechnologyGroup;
