@@ -8,10 +8,10 @@ enum Technology: string implements Technological
 {
     case Apache = 'Apache';
     case C = 'C';
-    case CSharp = 'C#';
     case Capistrano = 'Capistrano';
     case Codeception = 'Codeception';
     case Composer = 'Composer';
+    case CSharp = 'C#';
     case Delphi = 'Delphi';
     case Docker = 'Docker';
     case Doctrine = 'Doctrine';
@@ -21,6 +21,7 @@ enum Technology: string implements Technological
     case Grunt = 'Grunt';
     case Java = 'Java';
     case JavaScript = 'JavaScript';
+    case jQuery = 'jQuery';
     case Laravel = 'Laravel';
     case Linux = 'Linux';
     case MongoDB = 'MongoDB';
@@ -33,23 +34,22 @@ enum Technology: string implements Technological
     case PLSQL = 'PL/SQL';
     case Psalm = 'Psalm';
     case Python = 'Python';
-    case REST = 'REST';
     case Redis = 'Redis';
-    case SOAP = 'SOAP';
-    case SQLite = 'SQLite';
-    case SVN = 'SVN';
+    case REST = 'REST';
     case Slim = 'Slim';
+    case SOAP = 'SOAP';
     case Solr = 'Solr';
     case SonarCloud = 'SonarCloud';
     case Sphinx = 'Sphinx';
+    case SQLite = 'SQLite';
+    case SVN = 'SVN';
     case Symfony = 'Symfony';
     case Travis = 'Travis';
+    case vanilla = 'vanilla';
     case Varnish = 'Varnish';
     case Wordpress = 'Wordpress';
     case Yii = 'Yii';
     case Zend = 'Zend';
-    case jQuery = 'jQuery';
-    case vanilla = 'vanilla';
 
     public function getValue(): string
     {
