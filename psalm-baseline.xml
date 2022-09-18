@@ -10,6 +10,9 @@
     </UnusedVariable>
   </file>
   <file src="view/html.php">
+    <MixedArgument occurrences="1">
+      <code>$image</code>
+    </MixedArgument>
     <RedundantCondition occurrences="3">
       <code>isset($job-&gt;company)</code>
       <code>isset($profile-&gt;contact-&gt;country)</code>
