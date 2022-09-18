@@ -1,0 +1,230 @@
+<?php
+
+declare(strict_types=1);
+
+use Mmm\Cv\Profile\Profile;
+use Mmm\Cv\Profile\Project;
+use Mmm\Cv\Profile\Technological;
+
+/** @var Profile $profile */
+
+$translations = [
+    'at' => 'at',
+    'details' => 'Details',
+    'education' => 'Education',
+    'languages' => 'Languages',
+    'links' => 'Links',
+    'present' => 'Present',
+    'profile' => 'Profile',
+    'project' => 'Project',
+    'projects' => 'Projects',
+    'recent-work-experience' => 'Recent work experience',
+    'specialties' => 'Specialties',
+    'technologies' => 'Technologies',
+];
+
+$workExperienceFormat = 'yyyy';
+$educationFormat = 'LLLL yyyy';
+$locale = 'en_US';
+
+function formatDate(?DateTimeInterface $dateTime, string $format, string $present, string $locale): string
+{
+    if ($dateTime === null) {
+        return $present;
+    }
+
+    $formatter = new \IntlDateFormatter($locale, 0, 0);
+    $formatter->setPattern($format);
+    return (string) $formatter->format($dateTime);
+}
+
+/**
+ * @param Technological[] $technologies
+ */
+function formatTechnologies(array $technologies): string
+{
+    $f = function (Technological $technological): string {
+        return $technological->getValue();
+    };
+
+    return implode(', ', array_map($f, $technologies));
+}
+
+/**
+ * @param Project[] $projects
+ */
+function formatProjects(array $projects): string
+{
+    $f = function (Project $project): string {
+        return sprintf(
+            '<a href="%s">%s</a>',
+            $project->url,
+            $project->name,
+        );
+    };
+
+    return implode(', ', array_map($f, $projects));
+}
+
+$image = null;
+
+?>
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>CV</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+
+<?php /** @phpstan-ignore-line */ if ($image !== null) { ?>
+<table>
+    <tr>
+        <td><img src="<?= $image ?>" height="130"></td>
+        <td style="padding: 30px;">
+            <h1><?= $profile->about->name ?></h1>
+            <h3><?= $profile->about->occupation ?></h3>
+        </td>
+    </tr>
+</table>
+<?php } else { ?>
+<h1><?= $profile->about->name ?></h1>
+<h3><?= $profile->about->occupation ?></h3>
+<?php }?>
+
+<br>
+
+<table>
+<tr>
+<td class="left">
+
+<table>
+    <tr>
+        <td><img src="images/profile-12x12.png"></td>
+        <td>
+            <p class="section"><?= $translations['profile'] ?></p>
+            <p><?= $profile->about->summary ?></p>
+            <p><?= $translations['specialties'] ?>: <?= implode(', ', $profile->about->specialties) ?>.</p>
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><img src="images/employment-12x12.png"></td>
+        <td>
+            <div>
+                <p class="section"><?= $translations['recent-work-experience'] ?></p>
+            </div>
+            <?php foreach ($profile->positions as $index => $job) { ?>
+                <div <?php if ($index > 0) {
+                    echo ' class=topmargin';
+                } ?>>
+                    <p>
+                        <span class="role">
+                            <?= $job->role ?>
+                            <?php
+                                $company = '';
+                if (isset($job->company)) {
+                    $company = $translations['at'] . ' ' . $job->company;
+                }
+                echo $company;
+                ?>
+                        </span>
+                        <br>
+                        <span class="timespan">
+                            <?= formatDate($job->startDate, $workExperienceFormat, $translations['present'], $locale) ?> –
+                            <?= formatDate($job->endDate, $workExperienceFormat, $translations['present'], $locale) ?>
+                        </span>
+                    </p>
+<?php if (isset($job->aboutCompany)) { ?>
+                    <p><?= $job->aboutCompany ?></p>
+<?php } ?>
+                    <p><?= $job->description ?></p>
+<?php if (count($job->technologies) > 0) { ?>
+                    <p><?= $translations['technologies'] ?>: <?= formatTechnologies($job->technologies) ?>.</p>
+<?php } ?>
+                    <?php if (count($job->projects) > 0) { ?>
+                        <p><?= (count($job->projects) > 1) ? $translations['projects'] : $translations['project'] ?>: <?= formatProjects($job->projects) ?></p>
+                    <?php } ?>
+                </div>
+            <?php } ?>
+        </td>
+    </tr>
+</table>
+
+<table>
+    <tr>
+        <td><img src="images/education-12x12.png"></td>
+        <td>
+            <p class="section"><?= $translations['education'] ?></p>
+<?php foreach ($profile->educations as $degree) { ?>
+            <p>
+                <span class="role"><?= $degree->degree ?>, <?= $degree->school ?>, <?= $degree->location ?></span>
+                <br>
+                <span class="timespan"><?= formatDate($degree->graduationDate, $educationFormat, $translations['present'], $locale) ?></span>
+            </p>
+<?php } ?>
+        </td>
+    </tr>
+</table>
+
+</td>
+<td class="middle">
+</td>
+<td class="right">
+
+<table>
+<tr>
+<td>
+
+<span class="section"><?= $translations['details'] ?></span>
+<br>
+<?= $profile->contact->city ?>
+<br>
+<?php if (isset($profile->contact->country)) { ?>
+<?= $profile->contact->country ?>
+<br>
+<?php } ?>
+<?= $profile->contact->phone ?>
+<br>
+<a href="mailto:<?= $profile->contact->email ?>"><?= $profile->contact->email ?></a>
+<?php if (isset($profile->contact->skype)) { ?>
+<br>
+Skype: <?= $profile->contact->skype ?>
+<?php } ?>
+
+<br>
+<br>
+
+<span class="section"><?= $translations['links'] ?></span>
+<br>
+<?php foreach ($profile->links as $link) { ?>
+    <a href="<?= $link->url ?>"><?= $link->name ?></a>
+    <br>
+<?php } ?>
+
+<br>
+
+<span class="section"><?= $translations['languages'] ?></span>
+<?php foreach ($profile->languages as $language) { ?>
+<br>
+<?= $language->name ?> (<?= $language->level ?>)
+<?php } ?>
+
+</td>
+</tr>
+</table>
+
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

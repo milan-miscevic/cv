@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<files psalm-version="4.27.0@faf106e717c37b8c81721845dba9de3d8deed8ff">
+  <file src="src/Generator/Generator.php">
+    <UnresolvableInclude occurrences="2">
+      <code>require $template</code>
+      <code>require $this-&gt;rootFolder . DIRECTORY_SEPARATOR . 'data' . DIRECTORY_SEPARATOR . $name . '.php'</code>
+    </UnresolvableInclude>
+    <UnusedVariable occurrences="1">
+      <code>$profile</code>
+    </UnusedVariable>
+  </file>
+  <file src="view/html.php">
+    <RedundantCondition occurrences="3">
+      <code>isset($job-&gt;company)</code>
+      <code>isset($profile-&gt;contact-&gt;country)</code>
+      <code>isset($profile-&gt;contact-&gt;skype)</code>
+    </RedundantCondition>
+    <TypeDoesNotContainType occurrences="1">
+      <code>$image !== null</code>
+    </TypeDoesNotContainType>
+  </file>
+</files>

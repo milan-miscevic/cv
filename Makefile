@@ -7,6 +7,9 @@ coverage:
 fix:
 	$(DOCKER) run --rm $(PHP) ./vendor/bin/php-cs-fixer fix
 
+generate:
+	$(DOCKER) run --rm $(PHP) php ./bin/generate.php
+
 install:
 	$(DOCKER) build
 	$(DOCKER) run --rm $(PHP) composer install
