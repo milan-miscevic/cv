@@ -13,13 +13,13 @@ class Generator
     {
     }
 
-    public function generate(string $template, string $name): void
+    public function generate(string $format, string $name): void
     {
         try {
             /** @var Profile */
             $profile = require $this->rootFolder . DIRECTORY_SEPARATOR . 'data' . DIRECTORY_SEPARATOR . $name . '.php';
 
-            $template = $this->rootFolder . DIRECTORY_SEPARATOR . 'view' . DIRECTORY_SEPARATOR . 'html.php';
+            $template = $this->rootFolder . DIRECTORY_SEPARATOR . 'view' . DIRECTORY_SEPARATOR . $format . '.php';
             $out = $this->rootFolder . DIRECTORY_SEPARATOR . 'docs' . DIRECTORY_SEPARATOR . 'cv.htm';
 
             ob_start();
