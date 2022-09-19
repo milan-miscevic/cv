@@ -11,8 +11,11 @@
     </UnusedVariable>
   </file>
   <file src="view/html.php">
+    <DocblockTypeContradiction occurrences="1">
+      <code>is_string($profile-&gt;about-&gt;specialties)</code>
+    </DocblockTypeContradiction>
     <MixedArgument occurrences="13">
-      <code>$image</code>
+      <code>$profile-&gt;about-&gt;specialties</code>
       <code>$translations['details']</code>
       <code>$translations['education']</code>
       <code>$translations['languages']</code>
@@ -45,14 +48,10 @@
     <MixedOperand occurrences="1">
       <code>$translations['at']</code>
     </MixedOperand>
-    <RedundantCondition occurrences="3">
+    <RedundantCondition occurrences="2">
       <code>isset($job-&gt;company)</code>
       <code>isset($profile-&gt;contact-&gt;country)</code>
-      <code>isset($profile-&gt;contact-&gt;skype)</code>
     </RedundantCondition>
-    <TypeDoesNotContainType occurrences="1">
-      <code>$image !== null</code>
-    </TypeDoesNotContainType>
     <UndefinedGlobalVariable occurrences="14">
       <code>$translations</code>
       <code>$translations</code>
