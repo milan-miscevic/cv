@@ -50,6 +50,7 @@ return new Profile(
             [
                 new Project('thelittleloop', 'https://thelittleloop.com/'),
             ],
+            null,
         ),
         new Position(
             'PHP Developer',
@@ -75,6 +76,7 @@ return new Profile(
                 Technology::Nginx,
             ],
             [],
+            null,
         ),
         new Position(
             'PHP / Full Stack Developer',
@@ -105,6 +107,7 @@ return new Profile(
             [
                 new Project('SteadyHealth', 'https://www.steadyhealth.com/'),
             ],
+            null,
         ),
         new Position(
             'PHP / Full Stack Developer',
@@ -130,6 +133,7 @@ return new Profile(
                 new Project('Croatia Hotels and Apartments', 'https://www.croatia-hotels-apartments.com/'),
                 new Project('Holiday-Link', 'https://www.holiday-link.com/'),
             ],
+            null,
         ),
     ],
     [

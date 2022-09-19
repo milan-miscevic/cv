@@ -89,7 +89,11 @@ function formatProjects(array $projects): string
         <td>
             <p class="section"><?= $translations['profile'] ?></p>
             <p><?= $profile->about->summary ?></p>
+<?php if (is_string($profile->about->specialties)) { ?>
+            <p><?= $profile->about->specialties ?></p>
+<?php } elseif (count($profile->about->specialties) > 0) { ?>
             <p><?= $translations['specialties'] ?>: <?= implode(', ', $profile->about->specialties) ?>.</p>
+<?php } ?>
         </td>
     </tr>
 </table>
@@ -129,10 +133,13 @@ function formatProjects(array $projects): string
 <?php if (count($job->technologies) > 0) { ?>
                     <p><?= $translations['technologies'] ?>: <?= formatTechnologies($job->technologies) ?>.</p>
 <?php } ?>
-                    <?php if (count($job->projects) > 0) { ?>
-                        <p><?= (count($job->projects) > 1) ? $translations['projects'] : $translations['project'] ?>: <?= formatProjects($job->projects) ?></p>
-                    <?php } ?>
-                </div>
+<?php if (count($job->projects) > 0) { ?>
+                                            <p><?= (count($job->projects) > 1) ? $translations['projects'] : $translations['project'] ?>: <?= formatProjects($job->projects) ?></p>
+<?php } ?>
+<?php if (isset($job->additional) > 0) { ?>
+                    <p><?= $job->additional ?></p>
+<?php } ?>
+                                    </div>
             <?php } ?>
         </td>
     </tr>
@@ -174,7 +181,7 @@ function formatProjects(array $projects): string
 <?= $profile->contact->phone ?>
 <br>
 <a href="mailto:<?= $profile->contact->email ?>"><?= $profile->contact->email ?></a>
-<?php if (isset($profile->contact->skype)) { ?>
+<?php if ($profile->contact->skype !== null) { ?>
 <br>
 Skype: <?= $profile->contact->skype ?>
 <?php } ?>

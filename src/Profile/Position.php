@@ -19,6 +19,7 @@ class Position
         public array $technologies,
         /** @var Project[] */
         public array $projects,
+        public ?string $additional,
     ) {
     }
 }

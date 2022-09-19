@@ -24,6 +24,20 @@ class Generator
             'specialties' => 'Specialties',
             'technologies' => 'Technologies',
         ],
+        'de' => [
+            'at' => 'bei',
+            'details' => 'Kontaktdetails',
+            'education' => 'Ausbildung',
+            'languages' => 'Sprachen',
+            'links' => 'Links',
+            'present' => 'heute',
+            'profile' => 'Profil',
+            'project' => '@todo',
+            'projects' => '@todo',
+            'recent-work-experience' => 'Werdegang',
+            'specialties' => '@todo',
+            'technologies' => '@todo',
+        ],
     ];
 
     public function __construct(private string $rootFolder)

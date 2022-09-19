@@ -12,7 +12,7 @@ class About
         public string $occupation,
         public string $summary,
         /** @var string[] */
-        public array $specialties,
+        public array|string $specialties,
     ) {
     }
 }
