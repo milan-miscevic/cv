@@ -5,14 +5,46 @@
       <code>require $template</code>
       <code>require $this-&gt;rootFolder . DIRECTORY_SEPARATOR . 'data' . DIRECTORY_SEPARATOR . $name . '.php'</code>
     </UnresolvableInclude>
-    <UnusedVariable occurrences="1">
+    <UnusedVariable occurrences="2">
       <code>$profile</code>
+      <code>$translations</code>
     </UnusedVariable>
   </file>
   <file src="view/html.php">
-    <MixedArgument occurrences="1">
+    <MixedArgument occurrences="13">
       <code>$image</code>
+      <code>$translations['details']</code>
+      <code>$translations['education']</code>
+      <code>$translations['languages']</code>
+      <code>$translations['links']</code>
+      <code>$translations['present']</code>
+      <code>$translations['present']</code>
+      <code>$translations['present']</code>
+      <code>$translations['profile']</code>
+      <code>$translations['recent-work-experience']</code>
+      <code>$translations['specialties']</code>
+      <code>$translations['technologies']</code>
+      <code>(count($job-&gt;projects) &gt; 1) ? $translations['projects'] : $translations['project']</code>
     </MixedArgument>
+    <MixedArrayAccess occurrences="14">
+      <code>$translations['at']</code>
+      <code>$translations['details']</code>
+      <code>$translations['education']</code>
+      <code>$translations['languages']</code>
+      <code>$translations['links']</code>
+      <code>$translations['present']</code>
+      <code>$translations['present']</code>
+      <code>$translations['present']</code>
+      <code>$translations['profile']</code>
+      <code>$translations['project']</code>
+      <code>$translations['projects']</code>
+      <code>$translations['recent-work-experience']</code>
+      <code>$translations['specialties']</code>
+      <code>$translations['technologies']</code>
+    </MixedArrayAccess>
+    <MixedOperand occurrences="1">
+      <code>$translations['at']</code>
+    </MixedOperand>
     <RedundantCondition occurrences="3">
       <code>isset($job-&gt;company)</code>
       <code>isset($profile-&gt;contact-&gt;country)</code>
@@ -21,5 +53,21 @@
     <TypeDoesNotContainType occurrences="1">
       <code>$image !== null</code>
     </TypeDoesNotContainType>
+    <UndefinedGlobalVariable occurrences="14">
+      <code>$translations</code>
+      <code>$translations</code>
+      <code>$translations</code>
+      <code>$translations</code>
+      <code>$translations</code>
+      <code>$translations</code>
+      <code>$translations</code>
+      <code>$translations</code>
+      <code>$translations</code>
+      <code>$translations</code>
+      <code>$translations</code>
+      <code>$translations</code>
+      <code>$translations</code>
+      <code>$translations</code>
+    </UndefinedGlobalVariable>
   </file>
 </files>

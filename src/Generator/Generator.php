@@ -9,17 +9,35 @@ use Throwable;
 
 class Generator
 {
+    private const TRANSLATIONS = [
+        'en' => [
+            'at' => 'at',
+            'details' => 'Details',
+            'education' => 'Education',
+            'languages' => 'Languages',
+            'links' => 'Links',
+            'present' => 'Present',
+            'profile' => 'Profile',
+            'project' => 'Project',
+            'projects' => 'Projects',
+            'recent-work-experience' => 'Recent work experience',
+            'specialties' => 'Specialties',
+            'technologies' => 'Technologies',
+        ],
+    ];
+
     public function __construct(private string $rootFolder)
     {
     }
 
-    public function generate(string $name, string $format): void
+    public function generate(string $name, string $format, string $language): void
     {
         try {
             /** @var Profile */
             $profile = require $this->rootFolder . DIRECTORY_SEPARATOR . 'data' . DIRECTORY_SEPARATOR . $name . '.php';
 
             $template = $this->rootFolder . DIRECTORY_SEPARATOR . 'view' . DIRECTORY_SEPARATOR . $format . '.php';
+            $translations = self::TRANSLATIONS[$language];
             $out = $this->rootFolder . DIRECTORY_SEPARATOR . 'docs' . DIRECTORY_SEPARATOR . 'cv.htm';
 
             ob_start();

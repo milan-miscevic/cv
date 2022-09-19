@@ -6,22 +6,8 @@ use Mmm\Cv\Profile\Profile;
 use Mmm\Cv\Profile\Project;
 use Mmm\Cv\Profile\Technological;
 
+/** @var array<string, string> $translations */
 /** @var Profile $profile */
-
-$translations = [
-    'at' => 'at',
-    'details' => 'Details',
-    'education' => 'Education',
-    'languages' => 'Languages',
-    'links' => 'Links',
-    'present' => 'Present',
-    'profile' => 'Profile',
-    'project' => 'Project',
-    'projects' => 'Projects',
-    'recent-work-experience' => 'Recent work experience',
-    'specialties' => 'Specialties',
-    'technologies' => 'Technologies',
-];
 
 $workExperienceFormat = 'yyyy';
 $educationFormat = 'LLLL yyyy';
