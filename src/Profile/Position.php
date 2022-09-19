@@ -13,11 +13,13 @@ class Position
         public string $company,
         public DateTimeInterface $startDate,
         public ?DateTimeInterface $endDate,
+        public ?string $aboutCompany,
         public string $description,
         /** @var Technological[] */
         public array $technologies,
         /** @var Project[] */
         public array $projects,
+        public ?string $additional,
     ) {
     }
 }

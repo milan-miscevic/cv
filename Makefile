@@ -7,6 +7,9 @@ coverage:
 fix:
 	$(DOCKER) run --rm $(PHP) ./vendor/bin/php-cs-fixer fix
 
+generate:
+	$(DOCKER) run --rm $(PHP) php ./bin/generate.php
+
 install:
 	$(DOCKER) build
 	$(DOCKER) run --rm $(PHP) composer install
@@ -23,7 +26,7 @@ psalm:
 standards:
 	$(DOCKER) run --rm $(PHP) ./vendor/bin/php-cs-fixer fix --dry-run -v
 
-test: standards unit phpstan psalm mutation
+test: standards unit phpstan psalm # mutation
 
 unit:
 	$(DOCKER) run --rm $(PHP) ./vendor/bin/phpunit
