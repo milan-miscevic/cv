@@ -9,4 +9,4 @@ require 'vendor/autoload.php';
 $rootFolder = dirname(dirname(__FILE__));
 $generator = new Generator($rootFolder);
 
-$generator->generate('html', 'milan-miscevic');
+$generator->generate('milan-miscevic', 'html');

@@ -13,7 +13,7 @@ class Generator
     {
     }
 
-    public function generate(string $format, string $name): void
+    public function generate(string $name, string $format): void
     {
         try {
             /** @var Profile */
