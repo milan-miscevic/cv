@@ -16,6 +16,7 @@ use Mmm\Cv\Profile\TechnologyGroup;
 
 return new Profile(
     new About(
+        null,
         'Milan Miščević',
         'PHP Developer',
         'I am a PHP developer with more than 10 years of software development experience and the first steps made into web development back in 2003. Learning new technologies and concepts every day, I am devoted to ensuring high quality and maintainable code with integrated best coding practices. I have a master\'s degree in computer science. A team player and interested in solving complex problems.',

@@ -48,8 +48,6 @@ function formatProjects(array $projects): string
 /** @var array<string, string> $translations */
 /** @var Profile $profile */
 
-$image = null;
-
 ?>
 
 <!DOCTYPE html>
@@ -64,10 +62,10 @@ $image = null;
 
 <body>
 
-<?php /** @phpstan-ignore-line */ if ($image !== null) { ?>
+<?php if ($profile->about->picture !== null) { ?>
 <table>
     <tr>
-        <td><img src="<?= $image ?>" height="130"></td>
+        <td><img src="<?= $profile->about->picture ?>" height="130"></td>
         <td style="padding: 30px;">
             <h1><?= $profile->about->name ?></h1>
             <h3><?= $profile->about->occupation ?></h3>
