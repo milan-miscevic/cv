@@ -26,7 +26,7 @@ psalm:
 standards:
 	$(DOCKER) run --rm $(PHP) ./vendor/bin/php-cs-fixer fix --dry-run -v
 
-test: standards unit phpstan psalm mutation
+test: standards unit phpstan psalm # mutation
 
 unit:
 	$(DOCKER) run --rm $(PHP) ./vendor/bin/phpunit
