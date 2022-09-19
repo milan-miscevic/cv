@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 use Mmm\Cv\Profile\About;
+use Mmm\Cv\Profile\Config;
 use Mmm\Cv\Profile\Contact;
 use Mmm\Cv\Profile\Education;
 use Mmm\Cv\Profile\Language;
@@ -161,4 +162,5 @@ return new Profile(
         new Language('English', 'C1/C2'),
         new Language('German', 'B1'),
     ],
+    new Config('yyyy', 'LLLL yyyy', 'en_US'),
 );

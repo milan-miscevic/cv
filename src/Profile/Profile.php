@@ -17,6 +17,7 @@ class Profile
         public array $links,
         /** @var Language[] */
         public array $languages,
+        public Config $config,
     ) {
     }
 }

@@ -6,13 +6,6 @@ use Mmm\Cv\Profile\Profile;
 use Mmm\Cv\Profile\Project;
 use Mmm\Cv\Profile\Technological;
 
-/** @var array<string, string> $translations */
-/** @var Profile $profile */
-
-$workExperienceFormat = 'yyyy';
-$educationFormat = 'LLLL yyyy';
-$locale = 'en_US';
-
 function formatDate(?DateTimeInterface $dateTime, string $format, string $present, string $locale): string
 {
     if ($dateTime === null) {
@@ -51,6 +44,9 @@ function formatProjects(array $projects): string
 
     return implode(', ', array_map($f, $projects));
 }
+
+/** @var array<string, string> $translations */
+/** @var Profile $profile */
 
 $image = null;
 
@@ -124,8 +120,8 @@ $image = null;
                         </span>
                         <br>
                         <span class="timespan">
-                            <?= formatDate($job->startDate, $workExperienceFormat, $translations['present'], $locale) ?> –
-                            <?= formatDate($job->endDate, $workExperienceFormat, $translations['present'], $locale) ?>
+                            <?= formatDate($job->startDate, $profile->config->positionDateFormat, $translations['present'], $profile->config->locale) ?> –
+                            <?= formatDate($job->endDate, $profile->config->positionDateFormat, $translations['present'], $profile->config->locale) ?>
                         </span>
                     </p>
 <?php if (isset($job->aboutCompany)) { ?>
@@ -153,7 +149,7 @@ $image = null;
             <p>
                 <span class="role"><?= $degree->degree ?>, <?= $degree->school ?>, <?= $degree->location ?></span>
                 <br>
-                <span class="timespan"><?= formatDate($degree->graduationDate, $educationFormat, $translations['present'], $locale) ?></span>
+                <span class="timespan"><?= formatDate($degree->graduationDate, $profile->config->educationDateFormat, $translations['present'], $profile->config->locale) ?></span>
             </p>
 <?php } ?>
         </td>
