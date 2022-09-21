@@ -37,6 +37,11 @@ class GeneratorTest extends TestCase
                 'en',
                 implode(DIRECTORY_SEPARATOR, [$this->rootFolder, 'docs', 'cv.htm']),
             ],
+            [
+                require implode(DIRECTORY_SEPARATOR, [$this->rootFolder, 'tests', 'data', 'minimal-profile.php']),
+                'en',
+                implode(DIRECTORY_SEPARATOR, [$this->rootFolder, 'tests', 'data', 'minimal-profile.htm']),
+            ],
         ];
     }
 }
