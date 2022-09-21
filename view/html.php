@@ -6,43 +6,45 @@ use Mmm\Cv\Profile\Profile;
 use Mmm\Cv\Profile\Project;
 use Mmm\Cv\Profile\Technological;
 
-function formatDate(?DateTimeInterface $dateTime, string $format, string $present, string $locale): string
-{
-    if ($dateTime === null) {
-        return $present;
+if (!function_exists('formatDate')) {
+    function formatDate(?DateTimeInterface $dateTime, string $format, string $present, string $locale): string
+    {
+        if ($dateTime === null) {
+            return $present;
+        }
+
+        $formatter = new \IntlDateFormatter($locale, 0, 0);
+        $formatter->setPattern($format);
+        return (string) $formatter->format($dateTime);
     }
 
-    $formatter = new \IntlDateFormatter($locale, 0, 0);
-    $formatter->setPattern($format);
-    return (string) $formatter->format($dateTime);
-}
+    /**
+     * @param Technological[] $technologies
+     */
+    function formatTechnologies(array $technologies): string
+    {
+        $f = function (Technological $technological): string {
+            return $technological->getValue();
+        };
 
-/**
- * @param Technological[] $technologies
- */
-function formatTechnologies(array $technologies): string
-{
-    $f = function (Technological $technological): string {
-        return $technological->getValue();
-    };
+        return implode(', ', array_map($f, $technologies));
+    }
 
-    return implode(', ', array_map($f, $technologies));
-}
+    /**
+     * @param Project[] $projects
+     */
+    function formatProjects(array $projects): string
+    {
+        $f = function (Project $project): string {
+            return sprintf(
+                '<a href="%s">%s</a>',
+                $project->url,
+                $project->name,
+            );
+        };
 
-/**
- * @param Project[] $projects
- */
-function formatProjects(array $projects): string
-{
-    $f = function (Project $project): string {
-        return sprintf(
-            '<a href="%s">%s</a>',
-            $project->url,
-            $project->name,
-        );
-    };
-
-    return implode(', ', array_map($f, $projects));
+        return implode(', ', array_map($f, $projects));
+    }
 }
 
 /** @var array<string, string> $translations */
