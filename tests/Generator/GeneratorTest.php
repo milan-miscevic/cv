@@ -10,15 +10,13 @@ use PHPUnit\Framework\TestCase;
 
 class GeneratorTest extends TestCase
 {
-    // @todo
-    private string $rootFolder = '/app';
-
     /**
      * @dataProvider dataProvider
      */
     public function testData(Profile $profile, string $language, string $generatedCv): void
     {
-        $generator = new Generator($this->rootFolder);
+        $rootFolder = dirname(dirname(dirname(__FILE__)));
+        $generator = new Generator($rootFolder);
 
         $this->assertSame(
             file_get_contents($generatedCv),
@@ -31,16 +29,18 @@ class GeneratorTest extends TestCase
      */
     public function dataProvider(): array
     {
+        $rootFolder = dirname(dirname(dirname(__FILE__)));
+
         return [
             [
-                require implode(DIRECTORY_SEPARATOR, [$this->rootFolder, 'data', 'milan-miscevic.php']),
+                require implode(DIRECTORY_SEPARATOR, [$rootFolder, 'data', 'milan-miscevic.php']),
                 'en',
-                implode(DIRECTORY_SEPARATOR, [$this->rootFolder, 'docs', 'cv.htm']),
+                implode(DIRECTORY_SEPARATOR, [$rootFolder, 'docs', 'cv.htm']),
             ],
             [
-                require implode(DIRECTORY_SEPARATOR, [$this->rootFolder, 'tests', 'data', 'minimal-profile.php']),
+                require implode(DIRECTORY_SEPARATOR, [$rootFolder, 'tests', 'data', 'minimal-profile.php']),
                 'en',
-                implode(DIRECTORY_SEPARATOR, [$this->rootFolder, 'tests', 'data', 'minimal-profile.htm']),
+                implode(DIRECTORY_SEPARATOR, [$rootFolder, 'tests', 'data', 'minimal-profile.htm']),
             ],
         ];
     }
