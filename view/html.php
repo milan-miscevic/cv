@@ -47,8 +47,10 @@ if (!function_exists('formatDate')) {
     }
 }
 
-/** @var array<string, string> $translations */
-/** @var Profile $profile */
+/**
+ * @var array<string, string> $translations
+ * @var Profile $profile
+ */
 
 ?>
 
@@ -116,7 +118,7 @@ if (!function_exists('formatDate')) {
                             <?= $job->role ?>
                             <?php
                                 $company = '';
-                if (isset($job->company)) {
+                if ($job->company !== null) {
                     $company = $translations['at'] . ' ' . $job->company;
                 }
                 echo $company;
@@ -128,7 +130,7 @@ if (!function_exists('formatDate')) {
                             <?= formatDate($job->endDate, $profile->config->positionDateFormat, $translations['present'], $profile->config->locale) ?>
                         </span>
                     </p>
-<?php if (isset($job->aboutCompany)) { ?>
+<?php if ($job->aboutCompany !== null) { ?>
                     <p><?= $job->aboutCompany ?></p>
 <?php } ?>
                     <p><?= $job->description ?></p>
@@ -138,7 +140,7 @@ if (!function_exists('formatDate')) {
 <?php if (count($job->projects) > 0) { ?>
                                             <p><?= (count($job->projects) > 1) ? $translations['projects'] : $translations['project'] ?>: <?= formatProjects($job->projects) ?></p>
 <?php } ?>
-<?php if (isset($job->additional) > 0) { ?>
+<?php if ($job->additional !== null) { ?>
                     <p><?= $job->additional ?></p>
 <?php } ?>
                                     </div>
@@ -176,7 +178,7 @@ if (!function_exists('formatDate')) {
 <br>
 <?= $profile->contact->city ?>
 <br>
-<?php if (isset($profile->contact->country)) { ?>
+<?php if ($profile->contact->country !== null) { ?>
 <?= $profile->contact->country ?>
 <br>
 <?php } ?>
