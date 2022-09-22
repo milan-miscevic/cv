@@ -19,7 +19,7 @@ return new Profile(
     [],
     new Contact(
         'My City',
-        'My Country',
+        null,
         '+12 34 567890',
         'joe.sixpack@example.com',
         null,
