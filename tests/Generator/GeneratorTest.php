@@ -33,17 +33,17 @@ class GeneratorTest extends TestCase
 
         return [
             [
-                require implode(DIRECTORY_SEPARATOR, [$rootFolder, 'data', 'milan-miscevic.php']),
+                require_once implode(DIRECTORY_SEPARATOR, [$rootFolder, 'data', 'milan-miscevic.php']),
                 'en',
                 implode(DIRECTORY_SEPARATOR, [$rootFolder, 'docs', 'cv.htm']),
             ],
             [
-                require implode(DIRECTORY_SEPARATOR, [$rootFolder, 'tests', 'data', 'minimal-profile.php']),
+                require_once implode(DIRECTORY_SEPARATOR, [$rootFolder, 'tests', 'data', 'minimal-profile.php']),
                 'en',
                 implode(DIRECTORY_SEPARATOR, [$rootFolder, 'tests', 'data', 'minimal-profile.htm']),
             ],
             [
-                require implode(DIRECTORY_SEPARATOR, [$rootFolder, 'tests', 'data', 'full-profile.php']),
+                require_once implode(DIRECTORY_SEPARATOR, [$rootFolder, 'tests', 'data', 'full-profile.php']),
                 'en',
                 implode(DIRECTORY_SEPARATOR, [$rootFolder, 'tests', 'data', 'full-profile.htm']),
             ],
