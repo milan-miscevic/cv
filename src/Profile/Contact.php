@@ -8,7 +8,7 @@ class Contact
 {
     public function __construct(
         public string $city,
-        public string $country,
+        public ?string $country,
         public string $phone,
         public string $email,
         public ?string $skype,

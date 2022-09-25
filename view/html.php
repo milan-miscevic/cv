@@ -6,47 +6,51 @@ use Mmm\Cv\Profile\Profile;
 use Mmm\Cv\Profile\Project;
 use Mmm\Cv\Profile\Technological;
 
-function formatDate(?DateTimeInterface $dateTime, string $format, string $present, string $locale): string
-{
-    if ($dateTime === null) {
-        return $present;
+if (!function_exists('formatDate')) {
+    function formatDate(?DateTimeInterface $dateTime, string $format, string $present, string $locale): string
+    {
+        if ($dateTime === null) {
+            return $present;
+        }
+
+        $formatter = new \IntlDateFormatter($locale, 0, 0);
+        $formatter->setPattern($format);
+        return (string) $formatter->format($dateTime);
     }
 
-    $formatter = new \IntlDateFormatter($locale, 0, 0);
-    $formatter->setPattern($format);
-    return (string) $formatter->format($dateTime);
+    /**
+     * @param Technological[] $technologies
+     */
+    function formatTechnologies(array $technologies): string
+    {
+        $f = function (Technological $technological): string {
+            return $technological->getValue();
+        };
+
+        return implode(', ', array_map($f, $technologies));
+    }
+
+    /**
+     * @param Project[] $projects
+     */
+    function formatProjects(array $projects): string
+    {
+        $f = function (Project $project): string {
+            return sprintf(
+                '<a href="%s">%s</a>',
+                $project->url,
+                $project->name,
+            );
+        };
+
+        return implode(', ', array_map($f, $projects));
+    }
 }
 
 /**
- * @param Technological[] $technologies
+ * @var array<string, string> $translations
+ * @var Profile $profile
  */
-function formatTechnologies(array $technologies): string
-{
-    $f = function (Technological $technological): string {
-        return $technological->getValue();
-    };
-
-    return implode(', ', array_map($f, $technologies));
-}
-
-/**
- * @param Project[] $projects
- */
-function formatProjects(array $projects): string
-{
-    $f = function (Project $project): string {
-        return sprintf(
-            '<a href="%s">%s</a>',
-            $project->url,
-            $project->name,
-        );
-    };
-
-    return implode(', ', array_map($f, $projects));
-}
-
-/** @var array<string, string> $translations */
-/** @var Profile $profile */
 
 ?>
 
@@ -114,7 +118,7 @@ function formatProjects(array $projects): string
                             <?= $job->role ?>
                             <?php
                                 $company = '';
-                if (isset($job->company)) {
+                if ($job->company !== null) {
                     $company = $translations['at'] . ' ' . $job->company;
                 }
                 echo $company;
@@ -126,7 +130,7 @@ function formatProjects(array $projects): string
                             <?= formatDate($job->endDate, $profile->config->positionDateFormat, $translations['present'], $profile->config->locale) ?>
                         </span>
                     </p>
-<?php if (isset($job->aboutCompany)) { ?>
+<?php if ($job->aboutCompany !== null) { ?>
                     <p><?= $job->aboutCompany ?></p>
 <?php } ?>
                     <p><?= $job->description ?></p>
@@ -136,7 +140,7 @@ function formatProjects(array $projects): string
 <?php if (count($job->projects) > 0) { ?>
                                             <p><?= (count($job->projects) > 1) ? $translations['projects'] : $translations['project'] ?>: <?= formatProjects($job->projects) ?></p>
 <?php } ?>
-<?php if (isset($job->additional) > 0) { ?>
+<?php if ($job->additional !== null) { ?>
                     <p><?= $job->additional ?></p>
 <?php } ?>
                                     </div>
@@ -174,7 +178,7 @@ function formatProjects(array $projects): string
 <br>
 <?= $profile->contact->city ?>
 <br>
-<?php if (isset($profile->contact->country)) { ?>
+<?php if ($profile->contact->country !== null) { ?>
 <?= $profile->contact->country ?>
 <br>
 <?php } ?>
