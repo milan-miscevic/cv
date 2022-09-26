@@ -69,7 +69,7 @@ if (!function_exists('formatDate')) {
 <?php if ($profile->about->picture !== null) { ?>
 <table>
     <tr>
-        <td><img src="<?= $profile->about->picture ?>" height="130"></td>
+        <td><img src="<?= $profile->about->picture ?>" height="130" alt="applicant picture"></td>
         <td style="padding: 30px;">
             <h1><?= $profile->about->name ?></h1>
             <h3><?= $profile->about->occupation ?></h3>
@@ -89,7 +89,7 @@ if (!function_exists('formatDate')) {
 
 <table>
     <tr>
-        <td><img src="images/profile-12x12.png"></td>
+        <td><img src="images/profile-12x12.png" alt="profile section logo"></td>
         <td>
             <p class="section"><?= $translations['profile'] ?></p>
             <p><?= $profile->about->summary ?></p>
@@ -104,7 +104,7 @@ if (!function_exists('formatDate')) {
 
 <table>
     <tr>
-        <td><img src="images/employment-12x12.png"></td>
+        <td><img src="images/employment-12x12.png" alt="work experience section logo"></td>
         <td>
             <div>
                 <p class="section"><?= $translations['recent-work-experience'] ?></p>
@@ -151,7 +151,7 @@ if (!function_exists('formatDate')) {
 
 <table>
     <tr>
-        <td><img src="images/education-12x12.png"></td>
+        <td><img src="images/education-12x12.png" alt="education section logo"></td>
         <td>
             <p class="section"><?= $translations['education'] ?></p>
 <?php foreach ($profile->educations as $degree) { ?>
