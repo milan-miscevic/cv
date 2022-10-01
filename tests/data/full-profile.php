@@ -56,8 +56,25 @@ return new Profile(
             ],
             'Winner of Hackathon.',
         ),
+        new Position(
+            'Volunteer',
+            null,
+            new DateTimeImmutable('2015-05-01'),
+            null,
+            null,
+            'Volunteer to various organizations.',
+            [],
+            [],
+            null,
+        ),
     ],
     [
+        new Education(
+            'Software engineer',
+            'University of Your City',
+            'Your City',
+            null,
+        ),
         new Education(
             'Software engineer',
             'University of My City',
