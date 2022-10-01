@@ -11,11 +11,17 @@ $rootFolder = dirname(dirname(__FILE__));
 
 /** @var Profile */
 $profile = require_once $rootFolder . DIRECTORY_SEPARATOR . 'data' . DIRECTORY_SEPARATOR . 'milan-miscevic.php';
-$outputFile = $rootFolder . DIRECTORY_SEPARATOR . 'docs' . DIRECTORY_SEPARATOR . 'cv.htm';
+$htmlFile = $rootFolder . DIRECTORY_SEPARATOR . 'docs' . DIRECTORY_SEPARATOR . 'cv.htm';
+$mdFile = $rootFolder . DIRECTORY_SEPARATOR . 'docs' . DIRECTORY_SEPARATOR . 'index.md';
 
 $generator = new Generator($rootFolder);
 
 file_put_contents(
-    $outputFile,
+    $htmlFile,
     $generator->generate($profile, 'html', 'en'),
+);
+
+file_put_contents(
+    $mdFile,
+    $generator->generate($profile, 'md', 'en'),
 );

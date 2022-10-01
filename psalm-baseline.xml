@@ -17,10 +17,11 @@
     <MixedReturnTypeCoercion occurrences="2">
       <code>string[][]</code>
     </MixedReturnTypeCoercion>
-    <UnresolvableInclude occurrences="3">
-      <code>require_once implode(DIRECTORY_SEPARATOR, [$rootFolder, 'data', 'milan-miscevic.php'])</code>
-      <code>require_once implode(DIRECTORY_SEPARATOR, [$rootFolder, 'tests', 'data', 'full-profile.php'])</code>
-      <code>require_once implode(DIRECTORY_SEPARATOR, [$rootFolder, 'tests', 'data', 'minimal-profile.php'])</code>
+    <UnresolvableInclude occurrences="4">
+      <code>require implode(DIRECTORY_SEPARATOR, [$rootFolder, 'data', 'milan-miscevic.php'])</code>
+      <code>require implode(DIRECTORY_SEPARATOR, [$rootFolder, 'data', 'milan-miscevic.php'])</code>
+      <code>require implode(DIRECTORY_SEPARATOR, [$rootFolder, 'tests', 'data', 'full-profile.php'])</code>
+      <code>require implode(DIRECTORY_SEPARATOR, [$rootFolder, 'tests', 'data', 'minimal-profile.php'])</code>
     </UnresolvableInclude>
   </file>
 </files>
