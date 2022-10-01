@@ -11,7 +11,6 @@ enum LanguageLevel: string
     case B1 = 'B1';
     case B2 = 'B2';
     case C1 = 'C1';
-    case C1C2 = 'C1/C2';
     case C2 = 'C2';
     case Native = 'Native';
 }

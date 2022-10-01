@@ -96,10 +96,10 @@ return new Profile(
         new Link('Stack Overflow', 'https://stackoverflow.com/'),
     ],
     [
-        new Language(LanguageName::English, LanguageLevel::C2),
-        new Language(LanguageName::German, LanguageLevel::C1),
-        new Language(LanguageName::Spanish, LanguageLevel::B1),
-        new Language(LanguageName::Chinese, LanguageLevel::A1),
+        new Language(LanguageName::English, [LanguageLevel::C2]),
+        new Language(LanguageName::German, [LanguageLevel::C1]),
+        new Language(LanguageName::Spanish, [LanguageLevel::B1]),
+        new Language(LanguageName::Chinese, [LanguageLevel::A1]),
     ],
     new Config('yyyy', 'LLLL yyyy', 'en_US'),
 );

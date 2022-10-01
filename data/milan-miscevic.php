@@ -165,9 +165,9 @@ return new Profile(
         new Link('Twitter', 'https://twitter.com/try_throw_catch'),
     ],
     [
-        new Language(LanguageName::Serbian, LanguageLevel::Native),
-        new Language(LanguageName::English, LanguageLevel::C1C2),
-        new Language(LanguageName::German, LanguageLevel::B1),
+        new Language(LanguageName::Serbian, [LanguageLevel::Native]),
+        new Language(LanguageName::English, [LanguageLevel::C1, LanguageLevel::C2]),
+        new Language(LanguageName::German, [LanguageLevel::B1]),
     ],
     new Config('yyyy', 'LLLL yyyy', 'en_US'),
 );
