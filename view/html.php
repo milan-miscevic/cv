@@ -93,9 +93,7 @@ if (!function_exists('formatDate')) {
         <td>
             <p class="section"><?= $translations['profile'] ?></p>
             <p><?= $profile->about->summary ?></p>
-<?php if (is_string($profile->about->specialties)) { ?>
-            <p><?= $profile->about->specialties ?></p>
-<?php } elseif (count($profile->about->specialties) > 0) { ?>
+<?php if (count($profile->about->specialties) > 0) { ?>
             <p><?= $translations['specialties'] ?>: <?= implode(', ', $profile->about->specialties) ?>.</p>
 <?php } ?>
         </td>

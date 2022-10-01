@@ -11,8 +11,8 @@ class About
         public string $name,
         public string $occupation,
         public string $summary,
-        /** @var string[]|string */
-        public array|string $specialties,
+        /** @var string[] */
+        public array $specialties,
     ) {
     }
 }
