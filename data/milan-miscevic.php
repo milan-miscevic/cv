@@ -7,6 +7,8 @@ use Mmm\Cv\Profile\Config;
 use Mmm\Cv\Profile\Contact;
 use Mmm\Cv\Profile\Education;
 use Mmm\Cv\Profile\Language;
+use Mmm\Cv\Profile\LanguageLevel;
+use Mmm\Cv\Profile\LanguageName;
 use Mmm\Cv\Profile\Link;
 use Mmm\Cv\Profile\Position;
 use Mmm\Cv\Profile\Profile;
@@ -163,9 +165,9 @@ return new Profile(
         new Link('Twitter', 'https://twitter.com/try_throw_catch'),
     ],
     [
-        new Language('Serbian', 'Native'),
-        new Language('English', 'C1/C2'),
-        new Language('German', 'B1'),
+        new Language(LanguageName::Serbian, LanguageLevel::Native),
+        new Language(LanguageName::English, LanguageLevel::C1C2),
+        new Language(LanguageName::German, LanguageLevel::B1),
     ],
     new Config('yyyy', 'LLLL yyyy', 'en_US'),
 );

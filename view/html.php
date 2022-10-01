@@ -205,7 +205,7 @@ Skype: <?= $profile->contact->skype ?>
 <span class="section"><?= $translations['languages'] ?></span>
 <?php foreach ($profile->languages as $language) { ?>
 <br>
-<?= $language->name ?> (<?= $language->level ?>)
+<?= $language->name->name ?> (<?= $language->level->value ?>)
 <?php } ?>
 
 </td>

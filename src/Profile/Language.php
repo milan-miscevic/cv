@@ -7,8 +7,8 @@ namespace Mmm\Cv\Profile;
 class Language
 {
     public function __construct(
-        public string $name,
-        public string $level,
+        public LanguageName $name,
+        public LanguageLevel $level,
     ) {
     }
 }
