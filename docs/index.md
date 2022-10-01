@@ -18,6 +18,14 @@ Technologies: PHP (Symfony, Doctrine), MySQL, Git, Composer, REST, Docker, PHPUn
 
 Project: [thelittleloop](https://thelittleloop.com/)
 
+### PHP Developer at inRecursion (my agency)
+
+*2015 – Present*
+
+Non-client work on personal (open source) projects.
+
+Technologies: PHP (Yii, Slim, Laravel), MySQL, JavaScript, Git, Composer, Docker, PHPUnit, PHP-CS-Fixer, Psalm, PHPStan, GitHub Actions, Travis, SonarCloud, Nginx.
+
 ### PHP / Full Stack Developer at LifeForm
 
 *2015 – 2020*
@@ -28,6 +36,14 @@ Technologies: PHP (Zend, Symfony), MySQL, JavaScript (jQuery), Git, Composer, Do
 
 Project: [SteadyHealth](https://www.steadyhealth.com/)
 
+### PHP / Full Stack Developer at To Islands Travel
+
+*2014 – 2018*
+
+Senior developer roles, Linux administration, education.
+
+Technologies: PHP (Yii, vanilla), MySQL, JavaScript (jQuery), Git, Composer, REST, Linux, Apache, Sphinx, Codeception, Capistrano.
+
+Projects: [Croatia Hotels and Apartments](https://www.croatia-hotels-apartments.com/), [Holiday-Link](https://www.holiday-link.com/)
+
 ## Education
-
-
