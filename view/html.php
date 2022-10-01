@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use Mmm\Cv\Profile\LanguageLevel;
 use Mmm\Cv\Profile\Profile;
 use Mmm\Cv\Profile\Project;
 use Mmm\Cv\Profile\Technological;
@@ -44,6 +45,18 @@ if (!function_exists('formatDate')) {
         };
 
         return implode(', ', array_map($f, $projects));
+    }
+
+    /**
+     * @param LanguageLevel[] $levels
+     */
+    function formatLanguageLevels(array $levels): string
+    {
+        $f = function (LanguageLevel $level): string {
+            return $level->name;
+        };
+
+        return implode('/', array_map($f, $levels));
     }
 }
 
@@ -93,9 +106,7 @@ if (!function_exists('formatDate')) {
         <td>
             <p class="section"><?= $translations['profile'] ?></p>
             <p><?= $profile->about->summary ?></p>
-<?php if (is_string($profile->about->specialties)) { ?>
-            <p><?= $profile->about->specialties ?></p>
-<?php } elseif (count($profile->about->specialties) > 0) { ?>
+<?php if (count($profile->about->specialties) > 0) { ?>
             <p><?= $translations['specialties'] ?>: <?= implode(', ', $profile->about->specialties) ?>.</p>
 <?php } ?>
         </td>
@@ -205,7 +216,7 @@ Skype: <?= $profile->contact->skype ?>
 <span class="section"><?= $translations['languages'] ?></span>
 <?php foreach ($profile->languages as $language) { ?>
 <br>
-<?= $language->name ?> (<?= $language->level ?>)
+<?= $language->name->name ?> (<?= formatLanguageLevels($language->level) ?>)
 <?php } ?>
 
 </td>

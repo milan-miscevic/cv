@@ -7,6 +7,8 @@ use Mmm\Cv\Profile\Config;
 use Mmm\Cv\Profile\Contact;
 use Mmm\Cv\Profile\Education;
 use Mmm\Cv\Profile\Language;
+use Mmm\Cv\Profile\LanguageLevel;
+use Mmm\Cv\Profile\LanguageName;
 use Mmm\Cv\Profile\Link;
 use Mmm\Cv\Profile\Position;
 use Mmm\Cv\Profile\Profile;
@@ -94,10 +96,10 @@ return new Profile(
         new Link('Stack Overflow', 'https://stackoverflow.com/'),
     ],
     [
-        new Language('English', 'C2'),
-        new Language('German', 'C1'),
-        new Language('Spanish', 'B1'),
-        new Language('Chinese', 'A1'),
+        new Language(LanguageName::English, [LanguageLevel::C2]),
+        new Language(LanguageName::German, [LanguageLevel::C1]),
+        new Language(LanguageName::Spanish, [LanguageLevel::B1]),
+        new Language(LanguageName::Chinese, [LanguageLevel::A1]),
     ],
     new Config('yyyy', 'LLLL yyyy', 'en_US'),
 );
