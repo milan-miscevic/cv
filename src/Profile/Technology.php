@@ -28,6 +28,7 @@ enum Technology: string implements Technological
     case MySQL = 'MySQL';
     case Nginx = 'Nginx';
     case PHP = 'PHP';
+    case phpBB = 'phpBB';
     case PHPCSFixer = 'PHP-CS-Fixer';
     case PHPStan = 'PHPStan';
     case PHPUnit = 'PHPUnit';

@@ -2,15 +2,24 @@
 
 ## Profile
 
-I am a PHP developer with more than 10 years of software development experience and the first steps made into web development back in 2003. Learning new technologies and concepts every day, I am devoted to ensuring high quality and maintainable code with integrated best coding practices. I have a master's degree in computer science. A team player and interested in solving complex problems.
+I am a software engineer with more than 12 years of software development experience and the first steps made into web development back in 2003. Learning new technologies and concepts every day, I am devoted to ensuring high quality and maintainable code with integrated best coding practices. I have a master's degree in Computer Science. A team player and interested in solving complex problems.
 
 Specialties: PHP, object-oriented design, backend development, code quality.
 
 ## Recent work experience
 
-### PHP Developer at Lakeside
+### Software Engineer at AUTO1
 
-*2020 – Present*
+*2021 – Present*
+
+
+
+
+
+
+### Software Engineer at Lakeside
+
+*2020 – 2021*
 
 Development of a new backend platform using the DDD approach.
 
@@ -18,9 +27,9 @@ Technologies: PHP (Symfony, Doctrine), MySQL, Git, Composer, REST, Docker, PHPUn
 
 Project: [thelittleloop](https://thelittleloop.com/)
 
-### PHP Developer at inRecursion (my agency)
+### Software Engineer at inRecursion (my agency)
 
-*2015 – Present*
+*2015 – 2021*
 
 Non-client work on personal (open source) projects.
 
@@ -28,25 +37,65 @@ Technologies: PHP (Yii, Slim, Laravel), MySQL, JavaScript, Git, Composer, Docker
 
 
 
-### PHP / Full Stack Developer at LifeForm
+### Software Engineer at LifeForm
 
 *2015 – 2020*
 
-Senior developer roles, design of a new framework-agnostic architecture, Linux administration, education.
+Development and web server administration of the custom-made CMS, design of a new framework-agnostic architecture.
 
 Technologies: PHP (Zend, Symfony), MySQL, JavaScript (jQuery), Git, Composer, Docker, Varnish, Grunt, PHPUnit, PHP-CS-Fixer, PHPStan, Linux, Nginx, Elasticsearch, Solr, MongoDB, Redis.
 
 Project: [SteadyHealth](https://www.steadyhealth.com/)
 
-### PHP / Full Stack Developer at To Islands Travel
+### Full Stack Developer at To Islands Travel
 
 *2014 – 2018*
 
-Senior developer roles, Linux administration, education.
+Development and web server administration of the custom-made CMSs.
 
 Technologies: PHP (Yii, vanilla), MySQL, JavaScript (jQuery), Git, Composer, REST, Linux, Apache, Sphinx, Codeception, Capistrano.
 
 Projects: [Croatia Hotels and Apartments](https://www.croatia-hotels-apartments.com/), [Holiday-Link](https://www.holiday-link.com/)
+
+### Embedded Developer at RT-RK
+
+*2014 – 2015*
+
+Development of drivers and software components according to the ISO 26262 standard.
+
+Technologies: C, Python, SVN.
+
+
+
+### Full Stack Developer at 
+
+*2013 – 2014*
+
+Contracted work on projects (mostly web sites) for small companies.
+
+Technologies: PHP (Zend, vanilla), MySQL, JavaScript (jQuery), Git, Linux, Apache, SVN, Wordpress.
+
+
+
+### Software Developer / System Administrator at Financ
+
+*2010 – 2014*
+
+Development and administration of the transaction processing system, development of software for POS terminals.
+
+Technologies: Java, PHP, Linux, PL/SQL, C#, SVN, SQLite, SOAP, Delphi.
+
+
+
+### PHP Developer at Gimnazija Banja Luka
+
+*2004 – 2008*
+
+Maintenance and development of the school forum, development of plug-ins.
+
+Technologies: PHP (phpBB), MySQL.
+
+
 
 ## Education
 
