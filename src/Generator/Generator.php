@@ -44,11 +44,11 @@ class Generator
     {
     }
 
-    public function generate(Profile $profile, string $format, string $language): string
+    public function generate(Profile $profile, Config $config): string
     {
         try {
-            $template = $this->rootFolder . DIRECTORY_SEPARATOR . 'view' . DIRECTORY_SEPARATOR . $format . '.php';
-            $translations = self::TRANSLATIONS[$language];
+            $template = $this->rootFolder . DIRECTORY_SEPARATOR . 'view' . DIRECTORY_SEPARATOR . $config->format . '.php';
+            $translations = self::TRANSLATIONS[$config->language];
 
             ob_start();
             require $template;

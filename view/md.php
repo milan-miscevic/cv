@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use Mmm\Cv\Generator\Config;
 use Mmm\Cv\Profile\LanguageLevel;
 use Mmm\Cv\Profile\Profile;
 use Mmm\Cv\Profile\Project;
@@ -62,6 +63,7 @@ if (!function_exists('formatDateMd')) {
 
 /**
  * @var array<string, string> $translations
+ * @var Config $config
  * @var Profile $profile
  */
 
@@ -80,7 +82,14 @@ if (!function_exists('formatDateMd')) {
 
 ## <?= $translations['recent-work-experience'] ?>
 
-<?php foreach ($profile->positions as $job) { ?>
+<?php
+
+foreach ($profile->positions as $index => $job) {
+    if ($index >= $config->recentPositionsCount) {
+        break;
+    }
+
+    ?>
 
 ### <?= $job->role ?> <?= $translations['at'] ?> <?= $job->company ?>
 

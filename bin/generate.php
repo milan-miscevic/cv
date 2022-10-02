@@ -2,6 +2,7 @@
 
 declare(strict_types=1);
 
+use Mmm\Cv\Generator\Config;
 use Mmm\Cv\Generator\Generator;
 use Mmm\Cv\Profile\Profile;
 
@@ -18,10 +19,10 @@ $generator = new Generator($rootFolder);
 
 file_put_contents(
     $htmlFile,
-    $generator->generate($profile, 'html', 'en'),
+    $generator->generate($profile, new Config('en', 4, 'html')),
 );
 
 file_put_contents(
     $mdFile,
-    $generator->generate($profile, 'md', 'en'),
+    $generator->generate($profile, new Config('en', 99, 'md')),
 );
