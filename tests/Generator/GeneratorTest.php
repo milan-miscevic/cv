@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Mmm\Cv\Tests\Generator;
 
+use Mmm\Cv\Generator\Config;
 use Mmm\Cv\Generator\Generator;
 use Mmm\Cv\Profile\Profile;
 use PHPUnit\Framework\TestCase;
@@ -20,7 +21,13 @@ class GeneratorTest extends TestCase
 
         $this->assertSame(
             file_get_contents($generatedCv),
-            $generator->generate($profile, $format, $language),
+            $generator->generate(
+                $profile,
+                new Config(
+                    $language,
+                    $format,
+                ),
+            ),
         );
     }
 
