@@ -48,6 +48,36 @@ Technologies: PHP (Yii, vanilla), MySQL, JavaScript (jQuery), Git, Composer, RES
 
 Projects: [Croatia Hotels and Apartments](https://www.croatia-hotels-apartments.com/), [Holiday-Link](https://www.holiday-link.com/)
 
+### PHP / Full Stack Developer at 
+
+*2013 – 2014*
+
+Contracted work on projects for small companies.
+
+Technologies: PHP (Zend, vanilla), MySQL, JavaScript (jQuery), Git, Linux, Apache, SVN, Wordpress.
+
+
+
+### Embedded Developer at RT-RK
+
+*2014 – 2015*
+
+Development of drivers and software components according to the ISO 26262 standard.
+
+Technologies: C, Python, SVN.
+
+
+
+### Software Developer / System Engineer at Financ
+
+*2010 – 2014*
+
+Development and administration of the transaction processing system and development of software for POS terminals.
+
+Technologies: Java, PHP, Linux, PL/SQL, C#, SVN, SQLite, SOAP, Delphi.
+
+
+
 ## Education
 
 ### Master's degree, Faculty of Electrical Engineering, Banja Luka
