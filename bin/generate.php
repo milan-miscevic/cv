@@ -19,10 +19,10 @@ $generator = new Generator($rootFolder);
 
 file_put_contents(
     $htmlFile,
-    $generator->generate($profile, new Config('en', 'html')),
+    $generator->generate($profile, new Config('en', 4, 'html')),
 );
 
 file_put_contents(
     $mdFile,
-    $generator->generate($profile, new Config('en', 'md')),
+    $generator->generate($profile, new Config('en', 99, 'md')),
 );

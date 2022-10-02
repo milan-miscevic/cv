@@ -14,8 +14,13 @@ class GeneratorTest extends TestCase
     /**
      * @dataProvider dataProvider
      */
-    public function testData(Profile $profile, string $language, string $format, string $generatedCv): void
-    {
+    public function testData(
+        Profile $profile,
+        string $language,
+        int $recentPositionsCount,
+        string $format,
+        string $generatedCv
+    ): void {
         $rootFolder = dirname(dirname(dirname(__FILE__)));
         $generator = new Generator($rootFolder);
 
@@ -25,6 +30,7 @@ class GeneratorTest extends TestCase
                 $profile,
                 new Config(
                     $language,
+                    $recentPositionsCount,
                     $format,
                 ),
             ),
@@ -32,7 +38,7 @@ class GeneratorTest extends TestCase
     }
 
     /**
-     * @return string[][]
+     * @return mixed[][]
      */
     public function dataProvider(): array
     {
@@ -42,24 +48,28 @@ class GeneratorTest extends TestCase
             [
                 require implode(DIRECTORY_SEPARATOR, [$rootFolder, 'data', 'milan-miscevic.php']),
                 'en',
+                4,
                 'html',
                 implode(DIRECTORY_SEPARATOR, [$rootFolder, 'docs', 'cv.htm']),
             ],
             [
                 require implode(DIRECTORY_SEPARATOR, [$rootFolder, 'tests', 'data', 'minimal-profile.php']),
                 'en',
+                99,
                 'html',
                 implode(DIRECTORY_SEPARATOR, [$rootFolder, 'tests', 'data', 'minimal-profile.htm']),
             ],
             [
                 require implode(DIRECTORY_SEPARATOR, [$rootFolder, 'tests', 'data', 'full-profile.php']),
                 'en',
+                99,
                 'html',
                 implode(DIRECTORY_SEPARATOR, [$rootFolder, 'tests', 'data', 'full-profile.htm']),
             ],
             [
                 require implode(DIRECTORY_SEPARATOR, [$rootFolder, 'data', 'milan-miscevic.php']),
                 'en',
+                99,
                 'md',
                 implode(DIRECTORY_SEPARATOR, [$rootFolder, 'docs', 'index.md']),
             ],
