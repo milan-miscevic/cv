@@ -47,8 +47,10 @@ class Generator
     public function generate(Profile $profile, Config $config): string
     {
         try {
+            $toExtract = ['translations' => self::TRANSLATIONS[$config->language]];
+            extract($toExtract);
+
             $template = $this->rootFolder . DIRECTORY_SEPARATOR . 'view' . DIRECTORY_SEPARATOR . $config->format . '.php';
-            $translations = self::TRANSLATIONS[$config->language];
 
             ob_start();
             require $template;
