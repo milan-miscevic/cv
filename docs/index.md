@@ -12,8 +12,9 @@ Specialties: PHP, object-oriented design, backend development, code quality.
 
 *2021 – Present*
 
+Development of internal microservices and applications.
 
-
+Technologies: PHP (Symfony, Doctrine), MySQL, REST, Swagger, GraphQL, Git, Composer, Docker, Terraform, Jenkins, Kibana, Behat, Wiremock, PHPStan, PHPUnit, PHP_CodeSniffer, Go, JavaScript (TypeScript, React).
 
 
 
@@ -109,9 +110,9 @@ Technologies: PHP (phpBB), MySQL.
 
 ## Details
 
-Banja Luka
+Berlin
 
-Bosnia and Herzegovina
+Germany
 
 [milan.miscevic@gmail.com](mailto:milan.miscevic@gmail.com)
 
@@ -131,5 +132,5 @@ Serbian (Native)
 
 English (C1/C2)
 
-German (B1)
+German (B1/B2)
 
