@@ -48,7 +48,9 @@ class Generator
     {
         try {
             $template = $this->rootFolder . DIRECTORY_SEPARATOR . 'view' . DIRECTORY_SEPARATOR . $config->format . '.php';
-            $translations = self::TRANSLATIONS[$config->language];
+
+            $toExtract = ['translations' => self::TRANSLATIONS[$config->language]];
+            extract($toExtract);
 
             ob_start();
             require $template;
