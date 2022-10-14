@@ -8,7 +8,7 @@ Specialties: PHP, object-oriented design, backend development, code quality.
 
 ## Recent work experience
 
-### Software Engineer at AUTO1
+### Software Engineer at AUTO1 Group
 
 *2021 – Present*
 
@@ -92,7 +92,7 @@ Technologies: Java, PHP, Linux, PL/SQL, C#, SVN, SQLite, SOAP, Delphi.
 
 *2004 – 2008*
 
-Maintenance and development of the school forum, development of plug-ins.
+Maintenance and development of the school forum, development of plugins.
 
 Technologies: PHP (phpBB), MySQL.
 
