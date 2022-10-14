@@ -32,7 +32,7 @@ return new Profile(
     [
         new Position(
             'Software Engineer',
-            'AUTO1',
+            'AUTO1 Group',
             new DateTimeImmutable('2021-05-01'),
             null,
             null,
@@ -229,7 +229,7 @@ return new Profile(
             new DateTimeImmutable('2004-03'),
             new DateTimeImmutable('2008-09'),
             null,
-            'Maintenance and development of the school forum, development of plug-ins.',
+            'Maintenance and development of the school forum, development of plugins.',
             [
                 new TechnologyGroup(Technology::PHP, [Technology::phpBB]),
                 Technology::MySQL,
