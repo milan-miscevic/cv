@@ -21,7 +21,7 @@ return new Profile(
         null,
         'Milan Miščević',
         'Software Engineer',
-        'I am a software engineer with more than 12 years of software development experience and the first steps made into web development back in 2003. Learning new technologies and concepts every day, I am devoted to ensuring high quality and maintainable code with integrated best coding practices. I have a master\'s degree in Computer Science. A team player and interested in solving complex problems.',
+        'I am a software engineer with more than 12 years of software development experience and my first steps were made in web development back in 2003. Learning new technologies and concepts every day, I am devoted to ensuring high-quality and maintainable code with integrated best coding practices. I have a master\'s degree in Computer Science. A team player and interested in solving complex problems.',
         [
             'PHP',
             'object-oriented design',
@@ -188,7 +188,7 @@ return new Profile(
             new DateTimeImmutable('2013-02-23'),
             new DateTimeImmutable('2014-03-13'),
             null,
-            'Contracted work on projects (mostly web sites) for small companies.',
+            'Development of (custom-made) CMSs and WordPress plugins for small companies.',
             [
                 new TechnologyGroup(Technology::PHP, [Technology::Zend, Technology::vanilla]),
                 Technology::MySQL,
@@ -203,7 +203,7 @@ return new Profile(
             null,
         ),
         new Position(
-            'Software Developer / System Administrator',
+            'Software Developer / System Engineer',
             'Financ',
             new DateTimeImmutable('2010-04-28'),
             new DateTimeImmutable('2014-02-14'),
