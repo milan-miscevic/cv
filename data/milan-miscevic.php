@@ -269,5 +269,5 @@ return new Profile(
         new Language(LanguageName::English, [LanguageLevel::C1, LanguageLevel::C2]),
         new Language(LanguageName::German, [LanguageLevel::B1, LanguageLevel::B2]),
     ],
-    new Config('yyyy', 'LLLL yyyy', 'en_US'),
+    new Config('LLLL yyyy', 'LLLL yyyy', 'en_US'),
 );
