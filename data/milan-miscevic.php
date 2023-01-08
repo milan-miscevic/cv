@@ -36,7 +36,7 @@ return new Profile(
             new DateTimeImmutable('2021-05-01'),
             null,
             null,
-            'Development of internal microservices and applications.',
+            'Development of internal microservices and applications, feature leading, technical improvement proposals.',
             [
                 new TechnologyGroup(Technology::PHP, [Technology::Symfony, Technology::Doctrine]),
                 Technology::MySQL,
