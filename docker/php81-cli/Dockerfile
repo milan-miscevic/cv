@@ -10,6 +10,7 @@ RUN docker-php-ext-enable xdebug
 RUN apt install -y libicu-dev && rm -rf /var/lib/apt/lists/*
 RUN docker-php-ext-install intl
 
+# @todo clean up
 RUN apt-get update && \
     apt-get upgrade -y && \
     apt-get install -y git
