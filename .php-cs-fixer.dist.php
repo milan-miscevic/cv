@@ -4,9 +4,6 @@ $finder = PhpCsFixer\Finder::create()
     ->in(__DIR__ . '/bin')
     ->in(__DIR__ . '/config')
     ->in(__DIR__ . '/data')
-    ->in(__DIR__ . '/src')
-    ->in(__DIR__ . '/tests')
-    ->in(__DIR__ . '/view')
 ;
 
 return (new PhpCsFixer\Config())
