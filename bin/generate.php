@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-use Mmm\Cv\Generator\Config;
-use Mmm\Cv\Generator\Generator;
-use Mmm\Cv\Profile\Profile;
+use Mmm\CvCreator\Generator\Config;
+use Mmm\CvCreator\Generator\Generator;
+use Mmm\CvCreator\Profile\Profile;
 
 require_once 'vendor/autoload.php';
 
@@ -15,7 +15,10 @@ $profile = require_once $rootFolder . DIRECTORY_SEPARATOR . 'data' . DIRECTORY_S
 $htmlFile = $rootFolder . DIRECTORY_SEPARATOR . 'docs' . DIRECTORY_SEPARATOR . 'cv.htm';
 $mdFile = $rootFolder . DIRECTORY_SEPARATOR . 'docs' . DIRECTORY_SEPARATOR . 'index.md';
 
-$generator = new Generator($rootFolder);
+// @todo temporary
+$generatorRootFolder = $rootFolder . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'milan-miscevic' . DIRECTORY_SEPARATOR . 'cv-creator';
+
+$generator = new Generator($generatorRootFolder);
 
 file_put_contents(
     $htmlFile,
