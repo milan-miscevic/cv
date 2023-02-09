@@ -12,9 +12,9 @@ Specialties: PHP, object-oriented design, backend development, code quality.
 
 *May 2021 – Present*
 
-Development of internal microservices and applications, feature leading, technical improvement proposals.
+Development of internal microservices and applications, technical improvement proposals, feature leading, technical specification writing.
 
-Technologies: PHP (Symfony, Doctrine), MySQL, REST, Swagger, GraphQL, Git, Composer, Docker, Terraform, Jenkins, Kibana, Behat, Wiremock, PHPStan, PHPUnit, PHP_CodeSniffer, Go, JavaScript (TypeScript, React).
+Technologies: PHP (Symfony, Doctrine), MySQL, REST, Swagger, OpenAPI, GraphQL, Git, Composer, Docker, Terraform, Jenkins, Kibana, Behat, Wiremock, PHPStan, PHPUnit, PHP_CodeSniffer, Go, JavaScript (TypeScript, React).
 
 
 
