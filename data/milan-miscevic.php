@@ -36,7 +36,7 @@ return new Profile(
             new DateTimeImmutable('2021-05-01'),
             null,
             null,
-            'Development of internal microservices and applications, technical improvement proposals, feature leading, technical specification writing.',
+            'Development of internal microservices and applications, technical improvement proposals, migrating monolithic to microservices architecture, refactoring, feature leading, technical specification writing.',
             [
                 new TechnologyGroup(Technology::PHP, [Technology::Symfony, Technology::Doctrine]),
                 Technology::MySQL,
