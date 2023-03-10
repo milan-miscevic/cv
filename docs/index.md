@@ -126,6 +126,8 @@ Skype:
 
 [Twitter](https://twitter.com/try_throw_catch)
 
+[Full CV](https://milan-miscevic.github.io/cv/)
+
 ## Languages
 
 Serbian (Native)
