@@ -4,6 +4,9 @@ declare(strict_types=1);
 
 use Mmm\CvCreator\Generator\Config;
 use Mmm\CvCreator\Generator\Generator;
+use Mmm\CvCreator\Generator\HtmlGenerator;
+use Mmm\CvCreator\Generator\MarkdownGenerator;
+use Mmm\CvCreator\Generator\Translator;
 use Mmm\CvCreator\Profile\Profile;
 
 require_once 'vendor/autoload.php';
@@ -18,14 +21,17 @@ $mdFile = $rootFolder . DIRECTORY_SEPARATOR . 'docs' . DIRECTORY_SEPARATOR . 'in
 // @todo temporary
 $generatorRootFolder = $rootFolder . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'milan-miscevic' . DIRECTORY_SEPARATOR . 'cv-creator';
 
-$generator = new Generator($generatorRootFolder);
+$translator = new Translator();
+
+$htmlGenerator = new HtmlGenerator($translator, $generatorRootFolder);
+$markdownGenerator = new MarkdownGenerator($translator);
 
 file_put_contents(
     $htmlFile,
-    $generator->generate($profile, new Config('en', 4, 'html')),
+    $htmlGenerator->generate($profile, new Config('en', 4, 'html')),
 );
 
 file_put_contents(
     $mdFile,
-    $generator->generate($profile, new Config('en', 99, 'md')),
+    $markdownGenerator->generate($profile, new Config('en', 99, 'md')),
 );

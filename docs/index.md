@@ -16,8 +16,6 @@ Development of internal microservices and applications, technical improvement pr
 
 Technologies: PHP (Symfony, Doctrine), MySQL, REST, Swagger, OpenAPI, GraphQL, Git, Composer, Docker, Terraform, Jenkins, Kibana, Behat, Wiremock, PHPStan, PHPUnit, PHP_CodeSniffer, Go, JavaScript (TypeScript, React).
 
-
-
 ### Software Engineer at Lakeside
 
 *November 2020 – April 2021*
@@ -35,8 +33,6 @@ Project: [thelittleloop](https://thelittleloop.com/)
 Non-client work on personal (open source) projects.
 
 Technologies: PHP (Yii, Slim, Laravel), MySQL, JavaScript, Git, Composer, Docker, PHPUnit, PHP-CS-Fixer, Psalm, PHPStan, GitHub Actions, Travis, SonarCloud, Nginx.
-
-
 
 ### Software Engineer at LifeForm
 
@@ -66,17 +62,13 @@ Development of drivers and software components according to the ISO 26262 standa
 
 Technologies: C, Python, SVN.
 
-
-
-### Full Stack Developer at 
+### Full Stack Developer
 
 *February 2013 – March 2014*
 
 Development of (custom-made) CMSs and WordPress plugins for small companies.
 
 Technologies: PHP (Zend, vanilla), MySQL, JavaScript (jQuery), Git, Linux, Apache, SVN, Wordpress.
-
-
 
 ### Software Developer / System Engineer at Financ
 
@@ -86,8 +78,6 @@ Development and administration of the transaction processing system, development
 
 Technologies: Java, PHP, Linux, PL/SQL, C#, SVN, SQLite, SOAP, Delphi.
 
-
-
 ### PHP Developer at Gimnazija Banja Luka
 
 *March 2004 – September 2008*
@@ -95,8 +85,6 @@ Technologies: Java, PHP, Linux, PL/SQL, C#, SVN, SQLite, SOAP, Delphi.
 Maintenance and development of the school forum, development of plugins.
 
 Technologies: PHP (phpBB), MySQL.
-
-
 
 ## Education
 
@@ -116,8 +104,6 @@ Germany
 
 [milan.miscevic@gmail.com](mailto:milan.miscevic@gmail.com)
 
-Skype: 
-
 ## Links
 
 [LinkedIn](https://www.linkedin.com/in/milanmiscevic/)
@@ -135,4 +121,3 @@ Serbian (Native)
 English (C1/C2)
 
 German (B1/B2)
-
