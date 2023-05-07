@@ -264,6 +264,7 @@ return new Profile(
         new Link('LinkedIn', 'https://www.linkedin.com/in/milanmiscevic/'),
         new Link('GitHub', 'https://github.com/milan-miscevic'),
         new Link('Twitter', 'https://twitter.com/try_throw_catch'),
+        new Link('ResearchGate', 'https://www.researchgate.net/profile/Milan-Miscevic'),
         new Link('Full CV', 'https://milan-miscevic.github.io/cv/'),
     ],
     [

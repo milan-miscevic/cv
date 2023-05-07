@@ -112,6 +112,8 @@ Germany
 
 [Twitter](https://twitter.com/try_throw_catch)
 
+[ResearchGate](https://www.researchgate.net/profile/Milan-Miscevic)
+
 [Full CV](https://milan-miscevic.github.io/cv/)
 
 ## Languages
