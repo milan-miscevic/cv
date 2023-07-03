@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 use Mmm\CvCreator\Generator\Config;
-use Mmm\CvCreator\Generator\Generator;
 use Mmm\CvCreator\Generator\HtmlGenerator;
 use Mmm\CvCreator\Generator\MarkdownGenerator;
 use Mmm\CvCreator\Generator\Translator;
