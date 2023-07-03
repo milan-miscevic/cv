@@ -2,7 +2,7 @@
 
 ## Profile
 
-I am a software engineer with more than 12 years of software development experience and my first steps were made in web development back in 2003. Learning new technologies and concepts every day, I am devoted to ensuring high-quality and maintainable code with integrated best coding practices. I have a master's degree in Computer Science. A team player and interested in solving complex problems.
+I am a software engineer with more than 13 years of software development experience and my first steps were made in web development back in 2003. Learning new technologies and concepts every day, I am devoted to ensuring high-quality and maintainable code with integrated best coding practices. I have a master's degree in Computer Science. A team player and interested in solving complex problems.
 
 Specialties: PHP, object-oriented design, backend development, code quality.
 
@@ -12,9 +12,9 @@ Specialties: PHP, object-oriented design, backend development, code quality.
 
 *May 2021 – Present*
 
-Development of internal microservices and applications, technical improvement proposals, migrating monolithic to microservices architecture, refactoring, feature leading, technical specification writing.
+Development of internal microservices and applications, project leading in cooperation with product leadership and other teams, code reviews, technical specification writing and designing, technical improvement proposals, migrating monolithic to microservices architecture, production incidence and proactive troubleshooting, refactoring.
 
-Technologies: PHP (Symfony, Doctrine), MySQL, REST, Swagger, OpenAPI, GraphQL, Git, Composer, Docker, Terraform, Jenkins, Kibana, Behat, Wiremock, PHPStan, PHPUnit, PHP_CodeSniffer, Go, JavaScript (TypeScript, React).
+Technologies: PHP (Symfony, Doctrine), MySQL, REST, Swagger, OpenAPI, GraphQL, Git, Composer, Docker, Terraform, Jenkins, AWS, Kibana, Grafana, Behat, Wiremock, PHPStan, PHPUnit, Go, JavaScript (TypeScript, React).
 
 ### Software Engineer at Lakeside
 
@@ -32,7 +32,7 @@ Project: [thelittleloop](https://thelittleloop.com/)
 
 Non-client work on personal (open source) projects.
 
-Technologies: PHP (Yii, Slim, Laravel), MySQL, JavaScript, Git, Composer, Docker, PHPUnit, PHP-CS-Fixer, Psalm, PHPStan, GitHub Actions, Travis, SonarCloud, Nginx.
+Technologies: PHP (Yii, Slim, Laravel), MySQL, JavaScript, Git, Composer, Docker, PHPUnit, Psalm, PHPStan, GitHub Actions, Travis, SonarCloud, Nginx.
 
 ### Software Engineer at LifeForm
 
@@ -40,7 +40,7 @@ Technologies: PHP (Yii, Slim, Laravel), MySQL, JavaScript, Git, Composer, Docker
 
 Development and web server administration of the custom-made CMS, design of a new framework-agnostic architecture.
 
-Technologies: PHP (Zend, Symfony), MySQL, JavaScript (jQuery), Git, Composer, Docker, Varnish, Grunt, PHPUnit, PHP-CS-Fixer, PHPStan, Linux, Nginx, Elasticsearch, Solr, MongoDB, Redis.
+Technologies: PHP (Zend, Symfony), MySQL, JavaScript (jQuery), Git, Composer, Docker, Varnish, Grunt, PHPUnit, PHPStan, Linux, Nginx, Elasticsearch, Solr, MongoDB, Redis.
 
 Project: [SteadyHealth](https://www.steadyhealth.com/)
 
