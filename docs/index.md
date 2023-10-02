@@ -2,7 +2,7 @@
 
 ## Profile
 
-I am a software engineer with more than 13 years of software development experience and my first steps were made in web development back in 2003. Learning new technologies and concepts every day, I am devoted to ensuring high-quality and maintainable code with integrated best coding practices. I have a master's degree in Computer Science. A team player and interested in solving complex problems.
+I am a software engineer with more than 13 years of software development experience and my first steps were made in backend development back in 2003. Learning new technologies and concepts every day, I am devoted to ensuring high-quality and maintainable code with integrated best coding practices. I have a master's degree in Computer Science. A team player and interested in solving complex problems.
 
 Specialties: PHP, object-oriented design, backend development, code quality.
 
@@ -12,9 +12,9 @@ Specialties: PHP, object-oriented design, backend development, code quality.
 
 *May 2021 – Present*
 
-Development of internal microservices and applications, project leading in cooperation with product leadership and other teams, code reviews, technical specification writing and designing, technical improvement proposals, migrating monolithic to microservices architecture, production incidence and proactive troubleshooting, refactoring.
+Development of internal microservices and applications, project leading in cooperation with product leadership and other teams, code reviews, technical specification writing and designing, technical improvement proposals, production incidence and proactive troubleshooting, refactoring, migrating monolithic to microservices architecture.
 
-Technologies: PHP (Symfony, Doctrine), MySQL, REST, Swagger, OpenAPI, GraphQL, Git, Composer, Docker, Terraform, Jenkins, AWS, Kibana, Grafana, Behat, Wiremock, PHPStan, PHPUnit, Go, JavaScript (TypeScript, React).
+Technologies: PHP (Symfony, Doctrine), MySQL, REST, OpenAPI, GraphQL, Swagger, Git, Composer, Docker, Jenkins, Terraform, AWS, Kibana, Grafana, Behat, Wiremock, PHPStan, PHPUnit, Go, JavaScript (TypeScript, React).
 
 ### Software Engineer at Lakeside
 
