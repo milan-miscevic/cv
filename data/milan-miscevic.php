@@ -232,19 +232,17 @@ return new Profile(
         'Germany',
         '',
         'milan.miscevic@gmail.com',
-        '',
+        null,
     ),
     [
         new Link('LinkedIn', 'https://www.linkedin.com/in/milanmiscevic/'),
         new Link('GitHub', 'https://github.com/milan-miscevic'),
-        new Link('Twitter', 'https://twitter.com/try_throw_catch'),
-        new Link('ResearchGate', 'https://www.researchgate.net/profile/Milan-Miscevic'),
         new Link('Full CV', 'https://milan-miscevic.github.io/cv/'),
     ],
     [
         new Language(LanguageName::Serbian, [LanguageLevel::Native]),
-        new Language(LanguageName::English, [LanguageLevel::C1, LanguageLevel::C2]),
-        new Language(LanguageName::German, [LanguageLevel::B1, LanguageLevel::B2]),
+        new Language(LanguageName::English, [LanguageLevel::C1]),
+        new Language(LanguageName::German, [LanguageLevel::B1]),
     ],
     new Config('LLLL yyyy', 'LLLL yyyy', 'en_US'),
 );

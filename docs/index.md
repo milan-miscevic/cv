@@ -102,16 +102,12 @@ Germany
 
 [GitHub](https://github.com/milan-miscevic)
 
-[Twitter](https://twitter.com/try_throw_catch)
-
-[ResearchGate](https://www.researchgate.net/profile/Milan-Miscevic)
-
 [Full CV](https://milan-miscevic.github.io/cv/)
 
 ## Languages
 
 Serbian (Native)
 
-English (C1/C2)
+English (C1)
 
-German (B1/B2)
+German (B1)
