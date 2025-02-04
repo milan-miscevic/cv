@@ -21,7 +21,7 @@ return new Profile(
         null,
         'Milan Miščević',
         'Software Engineer',
-        'I am a software engineer with more than 13 years of software development experience and my first steps were made in backend development back in 2003. Learning new technologies and concepts every day, I am devoted to ensuring high-quality and maintainable code with integrated best coding practices. I have a master\'s degree in Computer Science. A team player and interested in solving complex problems.',
+        'I am a seasoned software engineer with more than 10 years of software development experience and my first steps were made in backend development back in 2003. Learning new technologies and concepts every day, I am devoted to ensuring high-quality and maintainable code with integrated best coding practices. I have a master\'s degree in Computer Science. A team player and interested in solving complex problems.',
         [
             'PHP',
             'object-oriented design',
@@ -32,7 +32,7 @@ return new Profile(
     [
         new Position(
             'Software Engineer',
-            'AUTO1 Group',
+            'AUTO1 Group (Germany)',
             new DateTimeImmutable('2021-05-01'),
             null,
             null,
@@ -64,7 +64,7 @@ return new Profile(
         ),
         new Position(
             'Software Engineer',
-            'Lakeside',
+            'Lakeside (Serbia)',
             new DateTimeImmutable('2020-11-16'),
             new DateTimeImmutable('2021-04-09'),
             null,
@@ -88,32 +88,7 @@ return new Profile(
         ),
         new Position(
             'Software Engineer',
-            'inRecursion (my agency)',
-            new DateTimeImmutable('2015-04-01'),
-            new DateTimeImmutable('2021-04-09'),
-            null,
-            'Non-client work on personal (open source) projects.',
-            [
-                new TechnologyGroup(Technology::PHP, [Technology::Yii, Technology::Slim, Technology::Laravel]),
-                Technology::MySQL,
-                Technology::JavaScript,
-                Technology::Git,
-                Technology::Composer,
-                Technology::Docker,
-                Technology::PHPUnit,
-                Technology::Psalm,
-                Technology::PHPStan,
-                Technology::GitHubActions,
-                Technology::Travis,
-                Technology::SonarCloud,
-                Technology::Nginx,
-            ],
-            [],
-            null,
-        ),
-        new Position(
-            'Software Engineer',
-            'LifeForm',
+            'LifeForm (Bosnia and Herzegovina)',
             new DateTimeImmutable('2015-03-10'),
             new DateTimeImmutable('2020-11-13'),
             null,
@@ -143,7 +118,7 @@ return new Profile(
         ),
         new Position(
             'Full Stack Developer',
-            'To Islands Travel',
+            'To Islands Travel (Croatia)',
             new DateTimeImmutable('2014-05-21'),
             new DateTimeImmutable('2018-01-31'),
             null,
@@ -169,7 +144,7 @@ return new Profile(
         ),
         new Position(
             'Embedded Developer',
-            'RT-RK',
+            'RT-RK (Bosnia and Herzegovina)',
             new DateTimeImmutable('2014-02-18'),
             new DateTimeImmutable('2015-03-31'),
             null,
@@ -204,7 +179,7 @@ return new Profile(
         ),
         new Position(
             'Software Developer / System Engineer',
-            'Financ',
+            'Financ (Bosnia and Herzegovina)',
             new DateTimeImmutable('2010-04-28'),
             new DateTimeImmutable('2014-02-14'),
             null,
@@ -225,7 +200,7 @@ return new Profile(
         ),
         new Position(
             'PHP Developer',
-            'Gimnazija Banja Luka',
+            'Gimnazija Banja Luka (Bosnia and Herzegovina)',
             new DateTimeImmutable('2004-03'),
             new DateTimeImmutable('2008-09'),
             null,

@@ -27,7 +27,7 @@ $markdownGenerator = new MarkdownGenerator($translator);
 
 file_put_contents(
     $htmlFile,
-    $htmlGenerator->generate($profile, new Config('en', 4, 'html')),
+    $htmlGenerator->generate($profile, new Config('en', 3, 'html')),
 );
 
 file_put_contents(

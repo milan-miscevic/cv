@@ -2,13 +2,13 @@
 
 ## Profile
 
-I am a software engineer with more than 13 years of software development experience and my first steps were made in backend development back in 2003. Learning new technologies and concepts every day, I am devoted to ensuring high-quality and maintainable code with integrated best coding practices. I have a master's degree in Computer Science. A team player and interested in solving complex problems.
+I am a seasoned software engineer with more than 10 years of software development experience and my first steps were made in backend development back in 2003. Learning new technologies and concepts every day, I am devoted to ensuring high-quality and maintainable code with integrated best coding practices. I have a master's degree in Computer Science. A team player and interested in solving complex problems.
 
 Specialties: PHP, object-oriented design, backend development, code quality.
 
 ## Recent work experience
 
-### Software Engineer at AUTO1 Group
+### Software Engineer at AUTO1 Group (Germany)
 
 *May 2021 – Present*
 
@@ -16,7 +16,7 @@ Development of internal microservices and applications, project leading in coope
 
 Technologies: PHP (Symfony, Doctrine), MySQL, REST, OpenAPI, GraphQL, Swagger, Git, Composer, Docker, Jenkins, Terraform, AWS, Kibana, Grafana, Behat, Wiremock, PHPStan, PHPUnit, Go, JavaScript (TypeScript, React).
 
-### Software Engineer at Lakeside
+### Software Engineer at Lakeside (Serbia)
 
 *November 2020 – April 2021*
 
@@ -26,15 +26,7 @@ Technologies: PHP (Symfony, Doctrine), MySQL, Git, Composer, REST, Docker, PHPUn
 
 Project: [thelittleloop](https://thelittleloop.com/)
 
-### Software Engineer at inRecursion (my agency)
-
-*April 2015 – April 2021*
-
-Non-client work on personal (open source) projects.
-
-Technologies: PHP (Yii, Slim, Laravel), MySQL, JavaScript, Git, Composer, Docker, PHPUnit, Psalm, PHPStan, GitHub Actions, Travis, SonarCloud, Nginx.
-
-### Software Engineer at LifeForm
+### Software Engineer at LifeForm (Bosnia and Herzegovina)
 
 *March 2015 – November 2020*
 
@@ -44,7 +36,7 @@ Technologies: PHP (Zend, Symfony), MySQL, JavaScript (jQuery), Git, Composer, Do
 
 Project: [SteadyHealth](https://www.steadyhealth.com/)
 
-### Full Stack Developer at To Islands Travel
+### Full Stack Developer at To Islands Travel (Croatia)
 
 *May 2014 – January 2018*
 
@@ -54,7 +46,7 @@ Technologies: PHP (Yii, vanilla), MySQL, JavaScript (jQuery), Git, Composer, RES
 
 Projects: [Croatia Hotels and Apartments](https://www.croatia-hotels-apartments.com/), [Holiday-Link](https://www.holiday-link.com/)
 
-### Embedded Developer at RT-RK
+### Embedded Developer at RT-RK (Bosnia and Herzegovina)
 
 *February 2014 – March 2015*
 
@@ -70,7 +62,7 @@ Development of (custom-made) CMSs and WordPress plugins for small companies.
 
 Technologies: PHP (Zend, vanilla), MySQL, JavaScript (jQuery), Git, Linux, Apache, SVN, Wordpress.
 
-### Software Developer / System Engineer at Financ
+### Software Developer / System Engineer at Financ (Bosnia and Herzegovina)
 
 *April 2010 – February 2014*
 
@@ -78,7 +70,7 @@ Development and administration of the transaction processing system, development
 
 Technologies: Java, PHP, Linux, PL/SQL, C#, SVN, SQLite, SOAP, Delphi.
 
-### PHP Developer at Gimnazija Banja Luka
+### PHP Developer at Gimnazija Banja Luka (Bosnia and Herzegovina)
 
 *March 2004 – September 2008*
 
