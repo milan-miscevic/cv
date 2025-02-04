@@ -2,9 +2,9 @@
 
 ## Profile
 
-I am a seasoned software engineer with more than 10 years of software development experience and my first steps were made in backend development back in 2003. Learning new technologies and concepts every day, I am devoted to ensuring high-quality and maintainable code with integrated best coding practices. I have a master's degree in Computer Science. A team player and interested in solving complex problems.
+I am a seasoned software engineer with more than 10 years of software development experience. Learning new technologies and concepts every day, I am devoted to ensuring high-quality and maintainable code with integrated best coding practices. I have a master's degree in Computer Science. A team player and interested in solving complex problems.
 
-Specialties: PHP, object-oriented design, backend development, code quality.
+Specialties: PHP, object-oriented design, backend development, tech debt.
 
 ## Recent work experience
 
